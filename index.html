@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="./js/config.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <title>Title</title>
+
+    <style> 
+        #check:checked ~ aside {
+            width: 0;
+            padding: 0;
+            border: none;
+            transition: all 0.3s linear;
+        }
+
+        #check:checked ~ main{
+            display: block;
+        }
+    </style>
+</head>
+<body class="bg-dark"> 
+    <main class="flex">
+        <input type="checkbox" id="check" class="hidden">
+        <aside class=" overflow-hidden sticky top-0 w-[15%] border-r border-gray-500 h-screen p-10 font-inter space-y-8">
+            <h1 class=" text-2xl text-logo font-semibold">Logo</h1>
+            <div class="space-y-8 border-b border-gray-600 pb-10">
+                <p class="text-sm text-gray-400">News Feed</p>
+                <ul class="text-gray-400 space-y-4">
+                    <li class=" group"><a href="#"><i class="group-hover:text-logo fa-brands fa-firefox-browser mr-3 transition duration-200"></i> <span class="group-hover:text-white transition duration-200">Browse</span>  </a></li>
+                    <li class=" group"><a href="#"><i class="group-hover:text-logo fa-brands fa-firefox-browser mr-3 transition duration-200"></i> <span class="group-hover:text-white transition duration-200">WishList</span></a></li>
+                    <li class=" group"><a href="#"><i class="group-hover:text-logo fa-brands fa-firefox-browser mr-3 transition duration-200"></i> <span class="group-hover:text-white transition duration-200">Comming soon</span> </a></li>
+                    <li class=" group"><a href="#"><i class="group-hover:text-logo fa-brands fa-firefox-browser mr-3 transition duration-200"></i> <span class="group-hover:text-white transition duration-200">Comming soon</span> </a></li>
+                </ul>
+            </div>
+            <div class="space-y-8 border-b border-gray-600 pb-36">
+                <p class="text-sm text-gray-400">Following</p>
+                <ul class="text-gray-400 space-y-6">
+                    <li class="flex items-center gap-x-5"><img src="./image/men.jpg" class="w-7 h-7 rounded-full object-cover"> <span>John Doe</span></li>
+                    <li class="flex items-center gap-x-5"><img src="./image/men.jpg" class="w-7 h-7 rounded-full object-cover"> <span>John Doe</span></li>
+                    <li class="flex items-center gap-x-5"><img src="./image/men.jpg" class="w-7 h-7 rounded-full object-cover"> <span>John Doe</span></li>
+                    <li class="flex items-center gap-x-5"><img src="./image/men.jpg" class="w-7 h-7 rounded-full object-cover"> <span>John Doe</span></li>
+                    <li class="flex items-center gap-x-5"><img src="./image/men.jpg" class="w-7 h-7 rounded-full object-cover"> <span>John Doe</span></li>
+                </ul>
+            </div>
+            <div class="space-y-8">
+                <div><i class="fa-solid fa-arrow-right-from-bracket text-white mr-3"></i> <span class="text-gray-400">Logout</span></div>
+            </div>
+
+        </aside>
+
+        <section class="container w-[85%] px-10 py-6 font-inter">
+            <div class=" flex items-center justify-between">
+                <label for="check" class="fa-sharp fa-solid text-white fa-bars text-xl cursor-pointer"></label>
+                <div class=" flex items-center gap-x-5">
+                    <i class="fa-regular text-white fa-message "></i>
+                    <i class="fa-regular text-white fa-bell "></i>
+                    <img src="./image/men.jpg" class=" w-10 h-10 rounded-full object-cover">
+                </div>
+            </div>
+
+            <div class=" h-[500px] w-[100%] bg-hero bg-cover bg-center my-10 rounded-md">
+                <div class="flex flex-col justify-center ml-24 h-full">
+                    <h2 class=" leading-relaxed text-5xl font-semibold text-gray-300 mb-6">
+                        The <span class=" text-white">SOUL <br /> CONDUCTOR</span>
+                    </h2>
+                    <button class=" w-max bg-logo text-white px-10 py-3 rounded-full font-medium">Watch</button>
+                </div>
+            </div>
+
+            <div class=" mb-10">
+                <h3 class=" text-xl text-white mb-5 font-medium">Parties</h3>
+                <div class="flex justify-between gap-x-10">
+                    <div class="bg-light rounded-2xl p-5 text-sm flex-1">
+                        <img src="./image/spider.jpg" class=" w-16 h-12 rounded-lg mb-3 object-cover">
+                        <h4 class="text-white">Spider Man</h4>
+                        <p class="text-gray-400">Adventure, Action</p>
+                    </div>
+                    <div class="bg-light rounded-2xl p-5 text-sm flex-1">
+                        <img src="./image/spider.jpg" class=" w-16 h-12 rounded-lg mb-3 object-cover">
+                        <h4 class="text-white">Spider Man</h4>
+                        <p class="text-gray-400">Adventure, Action</p>
+                    </div>
+                    <div class="bg-light rounded-2xl p-5 text-sm flex-1">
+                        <img src="./image/spider.jpg" class=" w-16 h-12 rounded-lg mb-3 object-cover">
+                        <h4 class="text-white">Spider Man</h4>
+                        <p class="text-gray-400">Adventure, Action</p>
+                    </div>
+                    <div class="bg-light rounded-2xl p-5 text-sm flex-1">
+                        <img src="./image/spider.jpg" class=" w-16 h-12 rounded-lg mb-3 object-cover">
+                        <h4 class="text-white">Spider Man</h4>
+                        <p class="text-gray-400">Adventure, Action</p>
+                    </div>
+                    <div class="bg-light rounded-2xl p-5 text-sm flex-1">
+                        <img src="./image/spider.jpg" class=" w-16 h-12 rounded-lg mb-3 object-cover">
+                        <h4 class="text-white">Spider Man</h4>
+                        <p class="text-gray-400">Adventure, Action</p>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <h3 class=" text-xl text-white mb-5 font-medium">Continue Watching</h3>
+                <div class="flex justify-between gap-x-10">
+                    <div class="rounded-2xl bg-light flex-1">
+                        <img src="./image/poster.jpg" class=" w-full h-[300px] rounded-t-lg mb-3 object-cover">
+                        <div class="p-5 text-sm ">
+                            <h4 class="text-white">Spider Man</h4>
+                            <p class="text-gray-400">Adventure, Action</p>
+                        </div>
+                    </div>
+                    <div class="rounded-2xl bg-light flex-1">
+                        <img src="./image/poster.jpg" class=" w-full h-[300px] rounded-t-lg mb-3 object-cover">
+                        <div class="p-5 text-sm ">
+                            <h4 class="text-white">Spider Man</h4>
+                            <p class="text-gray-400">Adventure, Action</p>
+                        </div>
+                    </div>
+                    <div class="rounded-2xl bg-light flex-1">
+                        <img src="./image/poster.jpg" class=" w-full h-[300px] rounded-t-lg mb-3 object-cover">
+                        <div class="p-5 text-sm ">
+                            <h4 class="text-white">Spider Man</h4>
+                            <p class="text-gray-400">Adventure, Action</p>
+                        </div>
+                    </div>
+                    <div class="rounded-2xl bg-light flex-1">
+                        <img src="./image/poster.jpg" class=" w-full h-[300px] rounded-t-lg mb-3 object-cover">
+                        <div class="p-5 text-sm ">
+                            <h4 class="text-white">Spider Man</h4>
+                            <p class="text-gray-400">Adventure, Action</p>
+                        </div>
+                    </div>
+                    <div class="rounded-2xl bg-light flex-1">
+                        <img src="./image/poster.jpg" class=" w-full h-[300px] rounded-t-lg mb-3 object-cover">
+                        <div class="p-5 text-sm ">
+                            <h4 class="text-white">Spider Man</h4>
+                            <p class="text-gray-400">Adventure, Action</p>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+<script src="https://kit.fontawesome.com/92421006d3.js" crossorigin="anonymous"></script>
+</body>
+</html>
